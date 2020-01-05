@@ -9,23 +9,21 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 try:
+	sortedList = []
         
         with open(sys.argv[1], "r") as file:
             data = file.readlines()
-            name,ext = os.path.splitext(file.name)
             
-            csvSwitch = False
-            header = ""
-            newCsv = []
-
             
             for line in data:
                 #Sort into list here
 
-	    file.close()
+	file.close()
                     
-            #recursively print the list
-            
+		
+		
+        for x in sortedList:
+  		print(x)     
             
 
         
