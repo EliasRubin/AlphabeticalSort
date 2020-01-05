@@ -9,25 +9,25 @@ if len(sys.argv) != 2:
 	sys.exit(1)
 
 try:
-	sortedList = []
+	
         
 	#opens a given file
         with open(sys.argv[1], "r") as file:
         	data = file.readlines()
+            	
+		sortedList = []
             
-            
-		#Sort into list here
+		#Sort into sortedList here
         	for line in data:
+			
                 
 
-		
-	file.close()
+		file.close()
                     
 		
-	
-	#prints out the sorted list of words
-        for x in sortedList:
-		print(x)     
+		#prints out the sorted list of words
+        	for x in sortedList:
+			print(x)     
             
 
         
