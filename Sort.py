@@ -2,21 +2,21 @@ import json
 import sys
 import os
 
-# n is size of heap 
+
 def heapify(list, n, i): 
     largest = i  # Initialize largest as root 
-    l = 2 * i + 1     # left = 2*i + 1 
-    r = 2 * i + 2     # right = 2*i + 2 
+    left = 2 * i + 1     # left = 2*i + 1 
+    right = 2 * i + 2     # right = 2*i + 2 
   
     # See if left child of root exists and is 
     # greater than root 
-    if l < n and list[i] < list[l]: 
-        largest = l 
+    if left < n and list[i].lower() < list[left].lower(): 
+        largest = left 
   
     # See if right child of root exists and is 
     # greater than root 
-    if r < n and list[largest] < list[r]: 
-        largest = r 
+    if right < n and list[largest].lower() < list[right].lower(): 
+        largest = right
   
     # Change root, if needed 
     if largest != i: 
@@ -78,10 +78,7 @@ try:
             
 
         
-        
-         
-       
-        
+
 
 
 
